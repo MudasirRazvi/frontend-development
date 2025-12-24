@@ -3,61 +3,279 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Little Lemon Menu</title>
+    <title>Little Lemon Restaurant | Mediterranean Cuisine</title>
+
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Markazi+Text:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
+
   <body>
-    <div class="container">
-      <!-- Row 1: Logo -->
-      <div class="row">
-        <div class="col-12">
-          <div class="text-center">
-            <img
-              src="assets/img/lemon-logo-images-illustration_600494-2705.avif"
-              class="img-fluid"
-              alt="Little Lemon Logo"
-            />
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm"
+      role="navigation"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://via.placeholder.com/150x40?text=LITTLE+LEMON"
+            alt="Little Lemon Logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto fw-bold">
+            <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hours">Hours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-primary-custom ms-lg-3" href="#reserve"
+                >Book a Table</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-center">
+      <div class="container">
+        <h1 class="display-3">Little Lemon</h1>
+        <h2 class="h3 mb-4">Chicago</h2>
+        <p class="lead mb-5 mx-auto" style="max-width: 600px">
+          We are a family owned Mediterranean restaurant, focused on traditional
+          recipes served with a modern twist.
+        </p>
+        <a href="#reserve" class="btn btn-primary-custom btn-lg"
+          >Reserve a Table</a
+        >
+      </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-5">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-5">
+          <h2 class="fw-bold">This Weeks Specials!</h2>
+          <button class="btn btn-dark">Online Menu</button>
+        </div>
+
+        <div class="row g-4">
+          <!-- Column 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card menu-card">
+              <img
+                src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=500&q=80"
+                class="card-img-top"
+                alt="Greek Salad"
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title fw-bold">Greek Salad</h5>
+                  <span class="text-danger fw-bold">$12.99</span>
+                </div>
+                <p class="card-text text-muted">
+                  The famous greek salad of crispy lettuce, peppers, olives and
+                  our Chicago style feta cheese.
+                </p>
+                <a href="#" class="btn btn-sm btn-outline-dark"
+                  >Order Delivery 🛵</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Column 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card menu-card">
+              <img
+                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=500&q=80"
+                class="card-img-top"
+                alt="Lemon Dessert"
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title fw-bold">Lemon Dessert</h5>
+                  <span class="text-danger fw-bold">$5.00</span>
+                </div>
+                <p class="card-text text-muted">
+                  This comes straight from grandma's recipe book, every last
+                  ingredient has been sourced.
+                </p>
+                <a href="#" class="btn btn-sm btn-outline-dark"
+                  >Order Delivery 🛵</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Column 3 (Responsive Adjustment) -->
+          <div class="col-md-12 col-lg-4">
+            <div class="card menu-card">
+              <img
+                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=500&q=80"
+                class="card-img-top"
+                alt="Bruschetta"
+              />
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <h5 class="card-title fw-bold">Bruschetta</h5>
+                  <span class="text-danger fw-bold">$7.99</span>
+                </div>
+                <p class="card-text text-muted">
+                  Our Bruschetta is made from grilled bread that has been
+                  smeared with garlic and seasoned.
+                </p>
+                <a href="#" class="btn btn-sm btn-outline-dark"
+                  >Order Delivery 🛵</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Row 2: Menu Title -->
-      <div class="row">
-        <div class="col-12">
-          <div class="text-center">
-            <h1>Our Menu</h1>
+    <!-- Hours Table (Working with Data) -->
+    <section id="hours" class="bg-light py-5">
+      <div class="container">
+        <h2 class="text-center mb-4 fw-bold">Our Schedule</h2>
+        <div class="table-responsive opening-hours-table bg-white p-3">
+          <table class="table table-hover align-middle">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">Day</th>
+                <th scope="col">Lunch</th>
+                <th scope="col">Dinner</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mon - Fri</td>
+                <td>11:00 AM - 3:00 PM</td>
+                <td>5:00 PM - 10:00 PM</td>
+              </tr>
+              <tr>
+                <td>Saturday</td>
+                <td>10:00 AM - 4:00 PM</td>
+                <td>5:00 PM - 11:00 PM</td>
+              </tr>
+              <tr>
+                <td>Sunday</td>
+                <td colspan="2" class="text-center text-danger fw-bold">
+                  Closed
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation Form (Bootstrap Components & ARIA) -->
+    <section id="reserve" class="py-5">
+      <div class="container">
+        <div class="reservation-box mx-auto" style="max-width: 800px">
+          <h2 class="text-center mb-4 fw-bold">Book Your Table</h2>
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="userName" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="userName"
+                  required
+                  aria-required="true"
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="userEmail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="userEmail"
+                  required
+                />
+              </div>
+              <div class="col-md-4">
+                <label for="guests" class="form-label">Guests</label>
+                <select class="form-select" id="guests">
+                  <option value="2">2 People</option>
+                  <option value="4">4 People</option>
+                  <option value="6">6+ People</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label for="date" class="form-label">Date</label>
+                <input type="date" class="form-control" id="date" />
+              </div>
+              <div class="col-md-4">
+                <label for="time" class="form-label">Time</label>
+                <input type="time" class="form-control" id="time" />
+              </div>
+              <div class="col-12 mt-4 text-center">
+                <button type="submit" class="btn btn-primary-custom w-50">
+                  Reserve Now
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer (Static Content) -->
+    <footer class="text-center text-lg-start">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <h5 class="fw-bold mb-3 text-warning">Little Lemon</h5>
+            <p>
+              Experience the authentic taste of the Mediterranean in the heart
+              of Chicago.
+            </p>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <h5 class="fw-bold mb-3 text-warning">Contact</h5>
+            <p>
+              📍 123 Street, Chicago<br />📞 +1 234 567 890<br />✉️
+              info@littlelemon.com
+            </p>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <h5 class="fw-bold mb-3 text-warning">Follow Us</h5>
+            <div class="d-flex gap-3">
+              <a href="#" class="text-white text-decoration-none">Facebook</a>
+              <a href="#" class="text-white text-decoration-none">Instagram</a>
+            </div>
           </div>
         </div>
+        <hr class="bg-white" />
+        <p class="text-center mb-0 pb-3">
+          &copy; 2025 Little Lemon Restaurant. Designed with ❤️ for Web Dev
+          Students.
+        </p>
       </div>
+    </footer>
 
-      <!-- Row 3: Two-Column Menu -->
-      <div class="row">
-        <!-- Column 1 -->
-        <div class="col-12 col-lg-6">
-          <h2>Falafel</h2>
-          <p>Chickpea, herbs, spices.</p>
-
-          <h2>Fried Calamari</h2>
-          <p>Squid, buttermilk.</p>
-        </div>
-
-        <!-- Column 2 -->
-        <div class="col-12 col-lg-6">
-          <h2>Pasta Salad</h2>
-          <p>Lettuce, vegetables, mozzarella.</p>
-
-          <h2>Greek Salad</h2>
-          <p>Cucumbers, onion, feta cheese.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Bootstrap JS -->
-    <script src="bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
